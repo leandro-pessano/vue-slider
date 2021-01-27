@@ -24,7 +24,7 @@
             <i @click="nextImg" class="fas fa-angle-right"></i>
         </div>
         <div class="nav">
-            <i class="fas fa-circle" v-for="(immagine, i) in immagini" :class="(i == counter) ? 'active' :'' "></i>
+            <i @click="pallinoAttivo(i)" class="fas fa-circle" v-for="(immagine, i) in immagini" :class="(i == counter) ? 'active' :'' "></i>
         </div>
     </div>
 

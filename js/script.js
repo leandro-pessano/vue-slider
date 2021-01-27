@@ -14,15 +14,18 @@ var vue = new Vue ({
       if (this.counter == this.immagini.length-1) {
         this.counter = 0;
       } else {
-        this.counter++
+        this.counter++;
       }
     },
     prevImg(){
       if (this.counter == 0) {
         this.counter = this.immagini.length-1;
       } else {
-        this.counter--
+        this.counter--;
       }
+    },
+    pallinoAttivo(i){
+      this.counter = i;
     }
   }
 });
