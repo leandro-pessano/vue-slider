@@ -27,5 +27,14 @@ var vue = new Vue ({
     pallinoAttivo(i){
       this.counter = i;
     }
+  },
+  mounted() {
+  	addEventListener("keydown", e => {
+  		if (e.keyCode == 37) {
+        this.prevImg();
+      } else if (e.keyCode == 39) {
+        this.nextImg();
+      }
+	   });
   }
 });
